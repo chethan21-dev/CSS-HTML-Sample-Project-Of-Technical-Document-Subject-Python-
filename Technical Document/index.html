@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <nav id="navbar">
+            <header>Documentation Menu</header>
+            <a href="#Intro" class="nav-link">
+                What is C++</a>
+            <a href="#Object" class="nav-link">
+                Objects and Classes</a>
+            <a href="#Inheritance" class="nav-link">
+                Inheritance</a>
+            <a href="#Polymorphism" class="nav-link">
+                Polymorphism</a>
+            <a href="#Abstraction" class="nav-link">
+                Abstraction</a>
+            <a href="#Encapsulation" class="nav-link">
+                Encapsulation</a>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>
+                    What is C++?
+                </header>
+                <p>
+                    Python is an easy to learn, powerful programming language. 
+                    It has efficient high-level data structures and a simple 
+                    but effective approach to object-oriented programming. 
+                    Python’s elegant syntax and dynamic
+                    typing, together with its interpreted nature, 
+                    make it an ideal language for scripting and rapid application
+                    development in many areas on most platforms.
+                    The Python interpreter and the extensive standard library are freely available in source or binary form for all
+                    major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The
+                    same site also contains distributions of and pointers to many free third party Python modules, programs
+                    and tools, and additional documentation.
+
+                </p>
+                <p>Here Basic programming “Find Max Of 2 numbers” program is the Basic
+                    step towards learning any programming
+                    language and also one of the simplest
+                    programs you will learn. All you have
+                    to do is display the message “Numeric Answer”
+                    on the screen.
+                    <br><br>Let us now look at the program :<br>
+                </p>
+                <code>
+                    def maximum(a, b):<iostream>  
+                    <br>
+                    if a >= b:  
+                    <br>
+                    return a
+                    <br>
+                        else:
+                            <br>
+                            return b 
+                            <br>
+                            a = 2
+                            <br>
+                            b = 2
+                            <br>
+                            print(maximum(a, b))
+                </code>
+                <br>
+                <p>Python is an interpreted, interactive, object-oriented programming language.
+                    <br> The main pillars of Object Oriented
+                    Programming in Python are :
+                </p>
+                <ul>
+                    <li>Objects and Classes</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Abstraction</li>
+                    <li>Encapsulation</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Object">
+                <header>
+                    Objects and Classes
+                </header>
+                <p>
+                    Classes provide a means of bundling data and functionality together. 
+                    Creating a new class creates a new type of object, allowing new instances of that type to be made. 
+                    Each class instance can have attributes attached to it for maintaining its state. 
+                    Class instances can also have methods (defined by its class) for modifying its state.
+                    Compared with other programming languages, Python’s class mechanism adds classes with a minimum of
+                    new syntax and semantics.
+                </p>
+                <p><b>Object : </b>An object is a collection of data (attributes) and methods (functions) that act on the data. 
+                    Every object in Python has a type.
+                    In Python we create instances in the following manner.
+                    <br>
+                    <strong>Instance = class(arguments)</strong>
+                    <br>
+                    <b>Class : </b> class is a fundamental concept in object-oriented programming (OOP) that acts as a blueprint for creating objects. 
+                    Objects are instances of classes, and a class defines a set of attributes and methods that its objects will have. 
+                    This allows for the modeling of real-world entities and their behaviors in a structured and reusable way.
+                    A class is defined using the class keyword followed by the class name and a colon. 
+                    The class body contains attributes and methods that define the behaviors and properties of the class.
+                </p>
+            </section>
+
+            <section class="main-section" id="Inheritance">
+                <header>
+                    Inheritance
+                </header>
+                <p>
+                    Inheritance in Python is a key feature of object-oriented programming (OOP) that allows a class (called a derived or child class) to inherit attributes 
+                    and methods from another class (called the base or parent class). This promotes code reuse and establishes a natural hierarchy between classes..
+                    <br>
+                    <P><b>Inheritance Syntax</b>
+
+                        To create a derived class, you specify the base class in parentheses after the derived class name.
+                        <br><i>
+                        class DerivedClass(BaseClass):</i></P>
+                </p>
+                <p> 
+                    <b>Mode of Inheritance : </b><br><br>
+
+                    <b>Single Inheritance : </b>In single inheritance, a class (derived class) inherits from one and only one base class. 
+                    This is the simplest form of inheritance.
+                    <br><br>
+                    <b>Multilevel Inheritance : </b>In multiple inheritance, a class inherits from more than one base class. 
+                    The derived class inherits attributes and methods from all specified base classes.
+                    <br><br>
+                    <b>Multilevel Inheritance : </b>In multilevel inheritance, a class inherits from a derived class, creating a chain of inheritance. 
+                    This forms a hierarchy of classes.
+                    <br><br>
+                    <b>Hierarchical Inheritance :</b> In hierarchical inheritance, multiple derived classes inherit from a single base class. 
+                    Each derived class has its own implementation but shares the base class’s attributes and methods.
+
+
+                    <br><br>
+                    <b>Hybrid Inheritance :</b> Hybrid inheritance is a combination of two or more types of inheritance. 
+                    It can involve multiple, multilevel, or hierarchical inheritance.
+                    <br><br>
+                    <b>Method Of Resolution Order (MRO) :</b>
+                    When dealing with multiple inheritance, Python uses the C3 linearization algorithm to determine the order in which base classes are accessed. 
+                    This order is known as Method Resolution Order (MRO). You can view the MRO of a class using the __mro__ attribute or the mro() method.
+                    For example: Combining Hierarchical
+                    inheritance and Multiple Inheritance.
+                </p>
+            </section>
+
+            <section class="main-section" id="Polymorphism">
+                <header>
+                    Polymorphism
+                </header>
+                <p>
+                    Polymorphism is a fundamental concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common base class. 
+                    The key idea is that a single interface or method can be used to represent different underlying forms (data types). 
+                    This capability is essential for creating flexible and easily extensible code.
+                    <br>
+                    <b>In Python polymorphism is mainly
+                        divided into 4 types:</b>
+                    <br> 1. Method Overriding<br>
+                    2. Method overloading <br>
+                    3.Duck typing <br>
+                    4.Polymorphism with Abstract Base Classes <br>
+                </p>
+
+                <p><strong>Method Overriding:</strong> Method overriding occurs when a derived class provides a specific implementation for a method that is already defined in its base class. 
+                    This allows derived classes to offer specialized behaviors while sharing the same method name.
+                    <br> <strong>Method overloading</strong>: Python does not support method overloading (where multiple methods with the same name but different parameters are defined) in the same way as some other languages like Java or C++. 
+                    Instead, Python uses default arguments and variable-length arguments to achieve similar results.
+                    <br> <strong>Duck typing </strong> : Duck typing is a concept where the type or class of an object is determined by its behavior (methods and properties) rather than its explicit type. 
+                    If an object implements a method or behaves in a certain way, it is treated according to that behavior, regardless of its actual class.
+                    <br> <strong> Polymorphism with Abstract Base Classes </strong> : Abstract Base Classes (ABCs) in Python provide a way to define common interfaces for a group of related classes. 
+                    You can define abstract methods that must be implemented by any concrete subclass.
+                </p>
+            </section>
+
+            <section class="main-section" id="Abstraction">
+                <header>
+                    Abstraction
+                </header>
+
+                <p>
+                    Abstraction in Python is a key concept in object-oriented programming (OOP) that involves hiding complex implementation details and showing only the essential features of an object. 
+                    It helps in reducing complexity by providing a simplified interface for interacting with objects while hiding the internal workings.
+                    Abstraction allows you to work with higher-level concepts and focuses on what an object does rather than how it does it.
+                </p>
+                <b>Key Aspects Of  Abstraction </b>
+                <p>
+                    <b>Abstract Classes:</b>Abstract classes are classes that cannot be instantiated directly and are meant to be subclasses. 
+                    They can contain abstract methods that must be implemented by any derived (concrete) class. 
+                    Abstract methods are defined using the @abstractmethod decorator from the abc module.
+                    <br>
+                    <b>Encapsulation and Abstraction : </b> <br>
+                    Encapsulation (bundling data and methods) is closely related to abstraction. 
+                    While encapsulation hides the internal state of an object and provides methods to interact with it, 
+                    abstraction focuses on exposing only necessary functionalities and hiding the details of how they are implemented.
+                    <br>
+                    <b>Using Abstraction in Design : </b> 
+                    Abstraction helps in designing systems with a clear separation between high-level logic and low-level implementation. 
+                    It allows developers to create complex systems with a focus on interfaces rather than details.
+                </p>
+            </section>
+
+            <section class="main-section" id="Encapsulation">
+                <header>
+                    Encapsulation
+                </header>
+                <p>
+                    Encapsulation is a fundamental principle of object-oriented programming (OOP) that involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit or class. 
+                    It also refers to restricting direct access to some of an object's components, which helps in controlling how the data is accessed and modified.
+                </p>
+
+                <p>
+                    <b>Key Concepts of Encapsulation in Python: </b><br><br>
+
+                    <b>Public Attributes and Methods : </b>By default, attributes and methods in Python are public, meaning they can be accessed and modified from outside the class. 
+                    This is the least restrictive form of encapsulation.
+                    <br><br>
+                    <b>Protected Attributes and Methods : </b>Protected attributes and methods are intended to be accessed only within the class and its subclasses. 
+                    In Python, this is indicated by a single underscore prefix ('_'), but this is a convention rather than a strict enforcement.
+                    <br><br>
+                    <b>Private Attributes and Methods : </b>Private attributes and methods are intended to be accessible only within the class. 
+                    They are indicated by a double underscore prefix ('__'). This name mangling makes them less accessible from outside the class, but not completely private.
+                    <br><br>
+                    <b>Getter and Setter Methods :</b> Getter and setter methods provide controlled access to private attributes. 
+                    They allow you to define methods to get and set the values of private attributes, which can include validation or transformation logic.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
